@@ -1,0 +1,39 @@
+Завдання 1
+Зробіть рефакторинг наступної програми (тобто використайте list comprehension і елементи функціонального програмування (map, filter)) 
+
+---------------------------------------->
+import random
+
+list_with_numbers = list(range(10))
+new_list = []
+
+for i in list_with_numbers:
+    if not i%2:
+        new_list.append(i + random.random())
+  
+print(new_list)
+----------------------------------------<
+
+
+Завдання 2
+Зробіть рефакторинг наступної програми (тобто використайте list comprehension і елементи функціонального програмування (map, filter)) 
+
+---------------------------------------->
+import string
+
+sentence = "I am @ Python @ senior ^ pomidor"
+
+list_with_words = sentence.split()
+new_list = []
+
+for word in list_with_words:
+    if not word in string.punctuation:
+        new_list.append(word)
+
+print(new_list)
+----------------------------------------<
+
+Завдання 3
+Дано деякий списко [(1,1,1), (1,2,3), (-1,-1,7), (-3,-2,8), (0,0,0), (3,-4,-5)]
+	- відсортуйте даний список по сумі кортежів
+	- відсортуйте даний список по третіх елементах з кортежів
